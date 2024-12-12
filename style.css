@@ -5,7 +5,7 @@
 }
 
 html {
-    font-size: 10px;
+    font-size: 6px;
 }
 
 body {
@@ -47,13 +47,88 @@ section {
     clear: both;
 }
 
+.col {
+    float: left;
+    width: 100%;
+    padding: 1rem;
+}
+
 .container {
-    width: 1540px;
+    width: 100%;
     margin-left: auto;
     margin-right: auto;
     padding-left: .5rem;
     padding-right: .5rem;
 }
+
+@media (min-width:576px) {
+    .container {
+        max-width: 540px;
+    }
+
+    html {
+        font-size: 7px;
+    }
+}
+
+@media (min-width:768px) {
+    .container {
+        max-width: 740px;
+
+    }
+
+    html {
+        font-size: 7px;
+    }
+
+    .col {
+        width: 50%;
+    }
+}
+
+@media (min-width:992px) {
+    .container {
+        max-width: 960px;
+    }
+
+    html {
+        font-size: 8px;
+    }
+
+    .col {
+        width: 33.33333%;
+    }
+}
+
+@media (min-width:1200px) {
+    .container {
+        max-width: 1140px;
+    }
+
+    html {
+        font-size: 9px;
+    }
+
+    .col {
+        width: 33.33333%;
+    }
+}
+
+
+@media (min-width:1400px) {
+    .container {
+        max-width: 1360px;
+    }
+
+    html {
+        font-size: 10px;
+    }
+
+    .col {
+        width: 33.33333%;
+    }
+}
+
 
 .text-uppercase {
     text-transform: uppercase;
@@ -161,6 +236,45 @@ nav {
     color: #18bc9c;
 }
 
+#nav-links .nav-item .nav-icon {
+    display: none;
+}
+
+@media(max-width:992px) {
+    #logo-box {
+        float: none;
+        text-align: left;
+    }
+
+    #nav-links {
+        float: none;
+    }
+
+    #nav-links .nav-item {
+        float: none;
+        text-align: left;
+    }
+
+    #nav-links .nav-item .nav-link{
+        font-size: 2rem; 
+        padding-left: 0;
+    }
+
+    #nav-links .nav-item .nav-icon{
+        display: block;
+        position: absolute;
+        top:10px;
+        right: 5px;
+        font-size: 3rem;
+    }
+
+    #nav-links.responsive .nav-item:not(:first-child){
+        display: none;
+    }
+
+
+}
+
 
 /*Header*/
 
@@ -197,7 +311,8 @@ hr.star-dark {
     border: none;
     border-top: .4rem solid;
     max-width: 30rem;
-    margin: 25px auto;
+    margin: 4rem auto;
+    padding: .4rem;
     overflow: visible;
     height: 0;
 }
@@ -219,7 +334,7 @@ hr.star-dark {
     font-weight: 900;
     font-size: 3.2rem;
     position: relative;
-    top: -27px;
+    top: -3rem;
     padding: 0 1rem;
 }
 
@@ -232,11 +347,7 @@ hr.star-dark {
     color: #2C3E50;
 }
 
-.col {
-    float: left;
-    width: 33.3333333%;
-    padding: 10px;
-}
+
 
 .portfolio-item {
     position: relative;
@@ -290,17 +401,33 @@ hr.star-dark {
 }
 
 #about-text .left {
-    float: left;
-    width: 50%;
-    padding-left: 25rem;
-    padding-right: 2rem;
+    float: none;
+    width: 100%;
+    padding-left: 25px;
+    padding-right: 25px;
 }
 
 #about-text .right {
-    float: right;
-    width: 50%;
-    padding-right: 25rem;
-    padding-left: 2rem;
+    float: none;
+    width: 100%;
+    padding-right: 25px;
+    padding-left: 25px;
+}
+
+@media(min-width:992px) {
+    #about-text .left {
+        float: left;
+        width: 50%;
+        padding-left: 210px;
+        padding-right: 10px;
+    }
+
+    #about-text .right {
+        float: right;
+        width: 50%;
+        padding-right: 210px;
+        padding-left: 10px;
+    }
 }
 
 #about-text .text {
@@ -380,6 +507,6 @@ footer .col li {
     text-align: center;
 }
 
-.copyright small{
+.copyright small {
     font-size: 1.8rem;
 }

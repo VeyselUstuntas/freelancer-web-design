@@ -25,23 +25,29 @@
   <nav>
     <div class="container clear-fix">
       <div id="logo-box">
-        <a href="#" class="logo text-uppercase">
+        <a href="#header" class="logo text-uppercase">
           Start Bootstrap
         </a>
       </div>
 
-      <div id="nav-links">
+      <div id="nav-links" class="responsive">
         <ul>
-          <li class="nav-item"><a href="#" class="nav-link text-uppercase">Portfolio</a></li>
-          <li class="nav-item"><a href="#" class="nav-link text-uppercase">About</a></li>
-          <li class="nav-item"><a href="#" class="nav-link text-uppercase">Contact</a></li>
+          <li class="nav-item">
+            <a href="#portfolio" class="nav-link text-uppercase nav-icon">
+              <i class="fas fa-bars"></i>
+            </a>
+          </li>
+
+          <li class="nav-item"><a href="#portfolio" class="nav-link text-uppercase">Portfolio</a></li>
+          <li class="nav-item"><a href="#about" class="nav-link text-uppercase">About</a></li>
+          <li class="nav-item"><a href="#contact" class="nav-link text-uppercase">Contact</a></li>
         </ul>
       </div>
     </div>
   </nav>
 
 
-  <header>
+  <header id="header">
     <div class="container">
       <img id="profile-image" class="img-fluid text-uppercase" src="img/profile.png" alt="profile">
     </div>
@@ -262,6 +268,15 @@
       </small>
     </div>
   </div>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+
+  <script>
+
+    $('.nav-icon').click(() => {
+      $('#nav-links').toggleClass("responsive");
+      return false;
+    });
+  </script>
 
 </body>
 
