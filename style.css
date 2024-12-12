@@ -35,6 +35,12 @@ ul {
     list-style-type: none;
 }
 
+section {
+    padding-top: 10rem;
+    padding-bottom: 10rem;
+    text-align: center;
+}
+
 .clear-fix::after {
     content: "";
     display: block;
@@ -171,10 +177,6 @@ hr.star-dark {
 /*Portfolio*/
 
 #portfolio {
-    height: 1000px;
-    padding-top: 10rem;
-    padding-bottom: 10rem;
-    text-align: center;
 }
 
 #portfolio h2 {
@@ -188,7 +190,7 @@ hr.star-dark {
     padding: 10px;
 }
 
-.portfolio-item{
+.portfolio-item {
     position: relative;
 }
 
@@ -196,7 +198,7 @@ hr.star-dark {
     display: block;
 }
 
-.img-overlay{
+.img-overlay {
     position: absolute;
     top: 0;
     left: 0;
@@ -207,17 +209,51 @@ hr.star-dark {
     transition: opacity .5s ease;
 }
 
-.img-overlay .icon{
+.img-overlay .icon {
     color: #fff;
     font-size: 2rem;
     position: absolute;
     top: 50%;
     left: 50%;
-    transform: translate(-50%,-50%);
+    transform: translate(-50%, -50%);
 }
 
 
-.portfolio-item:hover .img-overlay{
+.portfolio-item:hover .img-overlay {
     opacity: .8;
 
+}
+
+
+/*about*/
+
+#about {
+    background-color: #18bc9c;
+    color: #fff;
+}
+
+
+#about h2{
+    font-size: 4.8rem;
+}
+
+#about-text{
+    text-align: left;
+} 
+
+#about-text .left{
+    float: left;
+    width: 50%;
+    padding-left: 25rem;
+    padding-right: 2rem;
+}
+#about-text .right{
+    float: right;
+    width: 50%;
+    padding-right: 25rem;
+    padding-left: 2rem;
+}
+
+#about-text .text{
+    font-size: 3rem;
 }
