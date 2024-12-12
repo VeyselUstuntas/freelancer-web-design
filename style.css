@@ -17,15 +17,25 @@ body {
     background-color: #fff;
 }
 
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-weight: 700;
+    font-family: Montserrat;
+}
+
 a {
     text-decoration: none;
 }
 
-ul{
+ul {
     list-style-type: none;
 }
 
-.clear-fix::after{
+.clear-fix::after {
     content: "";
     display: block;
     clear: both;
@@ -43,6 +53,11 @@ ul{
     text-transform: uppercase;
 }
 
+.img-fluid {
+    max-width: 100%;
+    height: auto;
+}
+
 /*Navbar*/
 
 nav {
@@ -51,9 +66,11 @@ nav {
     padding-top: 2.4rem;
     padding-bottom: 2.4rem;
     font-family: 'Montserrat';
+    position: fixed;
+    width: 100%;
 }
 
-#logo-box{
+#logo-box {
     float: left;
     padding-top: .6rem;
 }
@@ -65,16 +82,16 @@ nav {
     font-size: 3.2rem;
 }
 
-#nav-links{
+#nav-links {
     float: right;
 }
 
-#nav-links .nav-item{
+#nav-links .nav-item {
     float: left;
     margin: .5rem;
 }
 
-#nav-links .nav-link{
+#nav-links .nav-link {
     color: #fff;
     font-size: 1.6rem;
     font-weight: 700;
@@ -84,6 +101,21 @@ nav {
     transition: color .3s;
 }
 
-#nav-links .nav-link:hover{
+#nav-links .nav-link:hover {
     color: #18bc9c;
+}
+
+
+/*Header*/
+
+header {
+    background-color: #18bc9c;
+    padding-top: calc(114px + 10rem);
+    padding-bottom: 114px;
+    text-align: center;
+}
+
+header h1{
+    color: #fff;
+    font-size: 7.6rem;
 }
