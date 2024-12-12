@@ -64,6 +64,41 @@ section {
     height: auto;
 }
 
+.btn {
+    margin-top: 3rem;
+    font-size: 3rem;
+    font-weight: 400;
+    display: inline-block;
+    border: solid .2rem;
+    border-radius: .4rem;
+    cursor: pointer;
+    transition: all .5s;
+}
+
+
+.btn-primary {
+    background-color: #18bc9c;
+    border-color: #18bc9c;
+    padding: 3rem 5rem;
+}
+
+.btn-primary:hover {
+    background-color: #128f76;
+    border-color: #128f76;
+}
+
+.btn-outline {
+    background-color: transparent;
+    border-color: #fff; 
+    color: #fff;
+    padding: 3rem 5rem;
+}
+
+.btn-outline:hover {
+    background-color: #fff;
+    color: #212529;
+}
+
 /*Navbar*/
 
 nav {
@@ -176,8 +211,7 @@ hr.star-dark {
 
 /*Portfolio*/
 
-#portfolio {
-}
+#portfolio {}
 
 #portfolio h2 {
     font-size: 4.8rem;
@@ -233,27 +267,28 @@ hr.star-dark {
 }
 
 
-#about h2{
+#about h2 {
     font-size: 4.8rem;
 }
 
-#about-text{
+#about-text {
     text-align: left;
-} 
+}
 
-#about-text .left{
+#about-text .left {
     float: left;
     width: 50%;
     padding-left: 25rem;
     padding-right: 2rem;
 }
-#about-text .right{
+
+#about-text .right {
     float: right;
     width: 50%;
     padding-right: 25rem;
     padding-left: 2rem;
 }
 
-#about-text .text{
+#about-text .text {
     font-size: 3rem;
 }
