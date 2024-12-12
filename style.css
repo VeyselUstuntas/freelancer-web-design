@@ -79,7 +79,8 @@ section {
 .btn-primary {
     background-color: #18bc9c;
     border-color: #18bc9c;
-    padding: 3rem 5rem;
+    padding: 1.5rem 2rem;
+    color: #fff;
 }
 
 .btn-primary:hover {
@@ -89,7 +90,7 @@ section {
 
 .btn-outline {
     background-color: transparent;
-    border-color: #fff; 
+    border-color: #fff;
     color: #fff;
     padding: 3rem 5rem;
 }
@@ -291,4 +292,43 @@ hr.star-dark {
 
 #about-text .text {
     font-size: 3rem;
+}
+
+/*Contact*/
+
+#contact h2 {
+    font-size: 4.8rem;
+    color: #2C3E50;
+}
+
+#contact-form {
+    width: 70%;
+    margin: 0 auto;
+    margin-top: 4rem;
+}
+
+#contact-form .form-group {
+    border-bottom: 1px solid #e9ecef;
+    padding-bottom: 1rem;
+    margin-bottom: 4rem;
+    text-align: left;
+}
+
+#contact-form .form-group input,
+#contact-form .form-group textarea {
+    width: 100%;
+    border: none;
+    display: block;
+    font-size: 2.6rem;
+
+}
+
+#contact-form .form-group input:focus,
+#contact-form .form-group textarea:focus {
+    outline: 0;
+}
+
+#contact-form .btn{
+    display: block;
+    text-align: left;
 }
